@@ -1,0 +1,35 @@
+/* Custom styles to complement Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a202c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d7c0f;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f6218;
+}
+
+/* Animation for hero section */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate

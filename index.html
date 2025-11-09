@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGuard - Smart Scarecrow Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#4d7c0f', // Lime-700 as primary
+                        },
+                        secondary: {
+                            500: '#84cc16', // Lime-500 as secondary
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="AgriGuard Logo" class="h-12 rounded-full">
+                    <span class="text-xl font-bold text-secondary-500">AgriGuard</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#how-it-works" class="hover:text-secondary-500 transition">How It Works</a>
+                    <a href="#team" class="hover:text-secondary-500 transition">Our Team</a>
+                    <a href="#installation" class="hover:text-secondary-500 transition">Installation</a>
+                    <a href="#faq" class="hover:text-secondary-500 transition">FAQ</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-gray-800 to-gray-900 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Protect Your Crops with <span class="text-primary-500">AgriGuard</span></h1>
+                <p class="text-xl mb-8 text-gray-300">The smart scarecrow that uses laser detection to keep birds away from your fields.</p>
+                <div class="flex space-x-4">
+                    <a href="#installation" class="bg-secondary-500 hover:bg-secondary-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition">Get Started</a>
+                    <a href="#how-it-works" class="border border-secondary-500 text-secondary-500 hover:bg-gray-800 font-bold py-3 px-6 rounded-lg transition">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="scarecrow.png" alt="AgriGuard in action" class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">How <span class="text-primary-500">AgriGuard</span> Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <div class="text-secondary-500 mb-4">
+                        <i data-feather="eye" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Laser Detection</h3>
+                    <p class="text-gray-300">Advanced sensors detect birds approaching your crops with precision.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <div class="text-secondary-500 mb-4">
+                        <i data-feather="activity" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Smart Response</h3>
+                    <p class="text-gray-300">The scarecrow activates movement and noise to scare birds away.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <div class="text-secondary-500 mb-4">
+                        <i data-feather="shield" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Protection</h3>
+                    <p class="text-gray-300">Works day and night to keep your crops safe from pests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Meet The <span class="text-primary-500">Team</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <img src="basul.png" alt="David Basul" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">David Basul</h3>
+                    <p class="text-secondary-500 mb-3">Hipster</p>
+                    <p class="text-gray-300">Design and user experience expert</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <img src="sabido.png" alt="Marchianne Dhel Cervantes Sabido" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Marchianne Dhel Cervantes Sabido</h3>
+                    <p class="text-secondary-500 mb-3">Hipster</p>
+                    <p class="text-gray-300">Creative director and product designer</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <img src="tonton.png" alt="Jestoni Catig" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Jestoni Catig</h3>
+                    <p class="text-secondary-500 mb-3">Hacker</p>
+                    <p class="text-gray-300">Technical lead and hardware engineer</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <img src="azuelo.jpg    " alt="Rechelle Azuelo" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Rechelle Azuelo</h3>
+                    <p class="text-secondary-500 mb-3">Hustler</p>
+                    <p class="text-gray-300">Business development and marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section id="installation" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16"><span class="text-primary-500">Installation</span> Guide</h2>
+            <div class="max-w-3xl mx-auto bg-gray-700 p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <i data-feather="package" class="w-16 h-16 text-secondary-500"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3">Step 1: Unboxing</h3>
+                        <p class="text-gray-300">Carefully remove AgriGuard from its packaging and ensure all components are present.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <i data-feather="battery" class="w-16 h-16 text-secondary-500"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3">Step 2: Power Up</h3>
+                        <p class="text-gray-300">Insert the battery pack and connect it to the AgriGuard unit.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <i data-feather="power" class="w-16 h-16 text-secondary-500"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3">Step 3: Activate & Adjust</h3>
+                        <p class="text-gray-300">Turn on the scarecrow and adjust the sensitivity using the switch on the side. Place it in your field for optimal coverage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Frequently Asked <span class="text-primary-500">Questions</span></h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <button class="faq-question w-full text-left p-4 bg-gray-700 hover:bg-gray-600 transition flex justify-between items-center">
+                        <span class="font-bold">How does AgriGuard detect birds?</span>
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-300">AgriGuard uses advanced laser sensors to detect movement and heat signatures typical of birds approaching your crops.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <button class="faq-question w-full text-left p-4 bg-gray-700 hover:bg-gray-600 transition flex justify-between items-center">
+                        <span class="font-bold">What's the battery life of AgriGuard?</span>
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-300">The standard battery lasts approximately 2 weeks with continuous use. We recommend checking the battery level weekly.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <button class="faq-question w-full text-left p-4 bg-gray-700 hover:bg-gray-600 transition flex justify-between items-center">
+                        <span class="font-bold">Is AgriGuard weatherproof?</span>
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-300">Yes, AgriGuard is designed to withstand typical outdoor conditions including rain and moderate winds. However, we recommend bringing it indoors during extreme weather.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <button class="faq-question w-full text-left p-4 bg-gray-700 hover:bg-gray-600 transition flex justify-between items-center">
+                        <span class="font-bold">How large of an area can one AgriGuard protect?</span>
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-300">One AgriGuard unit can effectively protect approximately 1 acre of land. For larger fields, we recommend multiple units spaced evenly.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="mb-6 bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <button class="faq-question w-full text-left p-4 bg-gray-700 hover:bg-gray-600 transition flex justify-between items-center">
+                        <span class="font-bold">Can I adjust the scare tactics?</span>
+                        <i data-feather="chevron-down" class="faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-300">Yes, AgriGuard comes with adjustable settings for both movement patterns and sound frequencies to prevent birds from getting accustomed to a single deterrent method.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-4">
+                        <img src="logo.png" alt="AgriGuard Logo" class="h-12 rounded-full">
+                        <span class="text-xl font-bold text-secondary-500">AgriGuard</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Protecting your harvest with smart technology.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="" class="text-gray-400 hover:text-secondary-500 transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-secondary-500 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-secondary-500 transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-secondary-500 transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 AgriGuard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            // Implement mobile menu functionality here
+            alert('Mobile menu would open here in a full implementation');
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
